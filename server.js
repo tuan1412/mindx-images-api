@@ -33,6 +33,10 @@ app.get('/ping', (req, res) => {
   res.send('pong');
 })
 
+app.get('/', (req, res) => {
+  res.send('pong');
+})
+
 // khởi tạo server
 app.listen(process.env.PORT || 8080, (err) => {
   if (err) throw err;
